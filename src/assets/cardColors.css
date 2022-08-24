@@ -1,0 +1,91 @@
+* {
+
+    --big-lotto-up: linear-gradient(0deg,
+            hsl(12deg 100% 35%) 0%,
+            hsl(28deg 100% 39%) 50%,
+            hsl(34deg 100% 43%) 75%,
+            hsl(38deg 100% 47%) 91%,
+            hsl(41deg 100% 50%) 100%);
+
+    --big-lotto-down: linear-gradient(180deg,
+            hsl(12deg 100% 35%) 0%,
+            hsl(23deg 100% 39%) 45%,
+            hsl(30deg 100% 43%) 64%,
+            hsl(36deg 100% 46%) 80%,
+            hsl(41deg 100% 50%) 100%);
+
+    --lucky-lotto-up: linear-gradient(0deg,
+            hsl(147deg 77% 23%) 0%,
+            hsl(136deg 56% 30%) 11%,
+            hsl(124deg 44% 37%) 22%,
+            hsl(110deg 45% 42%) 33%,
+            hsl(99deg 50% 45%) 44%,
+            hsl(90deg 56% 48%) 56%,
+            hsl(82deg 62% 50%) 67%,
+            hsl(75deg 74% 52%) 78%,
+            hsl(69deg 87% 53%) 89%,
+            hsl(64deg 100% 52%) 100%);
+
+    --lucky-lotto-down: linear-gradient(180deg,
+            hsl(147deg 77% 23%) 0%,
+            hsl(136deg 56% 30%) 11%,
+            hsl(124deg 44% 37%) 22%,
+            hsl(110deg 45% 42%) 33%,
+            hsl(99deg 50% 45%) 44%,
+            hsl(90deg 56% 48%) 56%,
+            hsl(82deg 62% 50%) 67%,
+            hsl(75deg 74% 52%) 78%,
+            hsl(69deg 87% 53%) 89%,
+            hsl(64deg 100% 52%) 100%);
+
+    --spin-lotto-up: linear-gradient(0deg,
+            hsl(206deg 81% 27%) 0%,
+            hsl(202deg 79% 37%) 33%,
+            hsl(198deg 83% 45%) 67%,
+            hsl(195deg 100% 52%) 100%);
+
+    --spin-lotto-down: linear-gradient(180deg,
+            hsl(206deg 81% 27%) 0%,
+            hsl(203deg 79% 34%) 25%,
+            hsl(200deg 81% 41%) 50%,
+            hsl(198deg 85% 47%) 75%,
+            hsl(195deg 100% 52%) 100%);
+
+    --royal-lotto-up: linear-gradient(0deg,
+            hsl(286deg 81% 27%) 0%,
+            hsl(316deg 100% 31%) 53%,
+            hsl(332deg 100% 41%) 77%,
+            hsl(344deg 100% 47%) 91%,
+            hsl(16deg 100% 52%) 100%);
+
+    --royal-lotto-down: linear-gradient(180deg,
+            hsl(286deg 81% 27%) 0%,
+            hsl(322deg 100% 35%) 63%,
+            hsl(340deg 100% 45%) 87%,
+            hsl(16deg 100% 52%) 100%);
+
+    --gold-lotto-up: linear-gradient(0deg,
+            hsl(48deg 58% 46%) 0%,
+            hsl(52deg 66% 50%) 63%,
+            hsl(55deg 83% 53%) 87%,
+            hsl(59deg 100% 52%) 100%);
+
+    --gold-lotto-down: linear-gradient(180deg,
+            hsl(48deg 58% 46%) 0%,
+            hsl(52deg 66% 50%) 63%,
+            hsl(55deg 83% 53%) 87%,
+            hsl(59deg 100% 52%) 100%);
+
+    --draw-lotto-up: linear-gradient(0deg,
+            hsl(0deg 98% 44%) 0%,
+            hsl(27deg 100% 48%) 28%,
+            hsl(42deg 100% 50%) 65%,
+            hsl(57deg 100% 52%) 100%);
+
+    --draw-lotto-down: linear-gradient(180deg,
+            hsl(0deg 98% 44%) 0%,
+            hsl(27deg 100% 48%) 28%,
+            hsl(42deg 100% 50%) 65%,
+            hsl(57deg 100% 52%) 100%);
+
+}

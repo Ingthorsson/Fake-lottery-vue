@@ -1,0 +1,83 @@
+@import "./base.css";
+@import "./cardColors.css";
+
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+/* 
+  CARD
+*/
+
+.card .card-face {
+  position: absolute;
+  text-align: left;
+  top: 270px;
+  width: 100%;
+  transform-origin: top;
+  transform: rotateX(-90deg);
+  transition: all 0.3s 0.3s ease-out;
+}
+
+.card.show .card-face {
+  padding: 20px;
+  transform: rotateX(0deg);
+  transform: translate(0, -2px);
+  border-radius: 0 0 15px 15px;
+}
+
+.card.show {
+  border-radius: 5px 80px 0 0;
+}
+
+.card.show {
+  opacity: 1 !important;
+  transform: matrix(1.1, 0, 0, 1.1, 0, 30) !important;
+}
+
+.cards.showing .card {
+  cursor: pointer;
+  opacity: 0.7;
+  transform: scale(0.8);
+}
+
+.lotto-content {
+  color: white;
+}
+
+.lotto-content ul {
+  margin-top: 10px;
+}
+
+.lotto-content h2 {
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0;
+  line-height: 20px;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+.lotto-content h3 {
+  font-weight: 700;
+  padding: 0;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+}
+
+/* 
+  X
+*/
+
+a,
+.green {
+  text-decoration: none;
+  color: hsla(160, 100%, 37%, 1);
+  transition: 0.4s;
+}
+
+.img-grow:hover {
+  transform: translate(0, 10px) scale(1.1);
+  transition: all 1s ease-in-out;
+}
