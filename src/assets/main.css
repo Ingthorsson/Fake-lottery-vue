@@ -1,5 +1,6 @@
 @import "./base.css";
 @import "./cardColors.css";
+@import "./buttons.css";
 
 
 #app {
@@ -11,6 +12,10 @@
 /* 
   CARD
 */
+
+.card {
+  transition: all 1s ease-in-out;
+}
 
 .card .card-face {
   position: absolute;
@@ -30,7 +35,7 @@
 }
 
 .card.show {
-  border-radius: 5px 80px 0 0;
+  border-radius: 0.5rem 8rem 0 0;
 }
 
 .card.show {
@@ -38,7 +43,7 @@
   transform: matrix(1.1, 0, 0, 1.1, 0, 30) !important;
 }
 
-.cards.showing .card {
+.home.showing .card {
   cursor: pointer;
   opacity: 0.7;
   transform: scale(0.8);
@@ -48,22 +53,42 @@
   color: white;
 }
 
+
 .lotto-content ul {
+  display: flex;
+  justify-content: flex-start;
+  list-style: none;
   margin-top: 10px;
 }
 
+.lotto-content li {
+  margin: 0 0.4rem 0 0.4rem;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 3rem;
+  width: 4rem;
+  height: 4rem;
+  border: white 0.3rem solid;
+  border-radius: 7rem 7rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(65, 104, 230, 0.7);
+  -webkit-box-shadow: 0.3rem 0.3rem 0.7rem 0.2rem rgba(0, 0, 0, 0.58);
+  box-shadow: 0.3rem 0.3rem 0.7rem 0.2rem rgba(0, 0, 0, 0.4);
+}
+
 .lotto-content h2 {
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: 700;
   padding: 0;
-  line-height: 20px;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  line-height: 2rem;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.7);
 }
 
 .lotto-content h3 {
+  font-size: 1.6rem;
   font-weight: 700;
-  padding: 0;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
+  padding: 0.8rem 0 0 0;
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.7);
 }
 
 /* 
@@ -78,6 +103,6 @@ a,
 }
 
 .img-grow:hover {
-  transform: translate(0, 10px) scale(1.1);
   transition: all 1s ease-in-out;
+  transform: translate(0, 0.5rem) scale(1.2);
 }

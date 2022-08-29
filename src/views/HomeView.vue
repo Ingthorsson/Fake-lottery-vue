@@ -1,5 +1,5 @@
 <template>
-  <div ref="minRef" class="cards">
+  <div ref="minRef" class="home">
     <div ref="showHideBigRef" class="card card-big" @click="toggleShowHide('big')">
       <img
         src="https://dooj13qizhkfs.cloudfront.net/asset/big_logo.svg"
@@ -55,9 +55,9 @@ const toggleShowHide = (type) => {
   if (cardSelected !== "") {
     if (cardSelected === type) {
       gameType.classList.value = `card card-${type}`;
-      gameType.style.zIndex = "1";
+      gameType.style.zIndex = "10";
       cardSelected = "";
-      minRef.value.classList.value = "cards";
+      minRef.value.classList.value = "home";
     } else {
       setType(cardSelected).classList.value = `card card-${cardSelected}`;
       gameType.classList.value = `card card-${type} show`;
@@ -68,7 +68,7 @@ const toggleShowHide = (type) => {
     gameType.classList.value = `card card-${type} show`;
     gameType.style.zIndex = "10";
     cardSelected = type;
-    minRef.value.classList.value = "cards showing";
+    minRef.value.classList.value = "home showing";
   }
 };
 
@@ -101,7 +101,7 @@ onMounted(() => {
 
 <style>
 .home {
-  max-width: 1200px;
+  max-width: 120rem;
   margin: 1rem auto;
   text-align: center;
   z-index: 0;
@@ -110,17 +110,21 @@ onMounted(() => {
   display: inline-block;
   position: relative;
   cursor: pointer;
-  margin: 0 9px 20px 9px;
+  margin: 0 0.8rem 2rem 0.8rem;
   caret-color: transparent;
-  border-radius: 5px 80px 20px 40px;
+  border-radius: 0.5rem 7rem 2rem 3rem;
   transition: all 0.4s 0.4s ease-out;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0.5rem 2rem rgba(0, 0, 0, 0.5);
 }
 .card-logo {
   margin: auto;
-  min-width: 370px;
-  height: 250px;
-  padding: 30px;
+  min-width: 37rem;
+  height: 25rem;
+  padding: 3rem;
+  transition: all 1s ease-in-out;
+}
+.card-logo:hover {
+  transform: translate(0, 0.5rem) scale(1.2);
 }
 .card-big {
   background-image: var(--big-lotto-up);
@@ -133,6 +137,6 @@ onMounted(() => {
 }
 
 .expand {
-  height: 20px;
+  height: 2rem;
 }
 </style>

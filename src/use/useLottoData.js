@@ -1,7 +1,5 @@
 export function useLottoData() {
 
-
-
     const game = {
         bigLotto: {
             bigDraw: [14, 15, 22, 25, 32, 44, 45],

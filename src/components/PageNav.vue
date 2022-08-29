@@ -14,14 +14,14 @@ import { RouterLink, RouterView } from "vue-router";
 <style scoped>
 nav {
   position: relative;
-  max-width: 1200px;
-  padding: 6px 10px;
-  margin: 0 auto 40px auto;
+  max-width: 120rem;
+  padding: 0.6rem 1rem;
+  margin: 0 auto 4rem auto;
   font-weight: 700;
-  font-size: 20px;
+  font-size: 2rem;
   background-color: rgb(256, 256, 256, 0.7);
-  box-shadow: 2px 2px 7px 2px rgba(0, 0, 0, 0.2);
-  border-radius: 15px;
+  box-shadow: 0.2rem 0.2rem 0.7rem 0.2rem rgba(0, 0, 0, 0.2);
+  border-radius: 1.5rem;
 }
 
 ul {
@@ -32,16 +32,16 @@ ul {
 li {
   display: inline-block;
   transition: all 0.3s ease-in;
-  border-radius: 20px;
-  margin-right: 10px;
+  border-radius: 2rem;
+  margin-right: 1rem;
 }
 
 li a {
   color: grey;
   text-decoration: none;
-  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  text-shadow: 0.1rem 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
   display: block;
-  padding: 0.25em 1.25em;
+  padding: 0.5em 1.4em;
   transition: all 0.3s ease-in;
 }
 
@@ -54,6 +54,6 @@ li:hover > a {
 }
 
 li:hover .menu-sub {
-  max-height: 800px;
+  max-height: 80rem;
 }
 </style>
